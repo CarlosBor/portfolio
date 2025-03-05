@@ -1,0 +1,18 @@
+.backgroundContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    padding:25px;
+}
+
+.backgroundContainer>p{
+    color:black;
+    font-size:24px;
+    font-family:Verdana;
+}
+
+.backgroundContainer>svg{
+    fill:blue;
+}

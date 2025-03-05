@@ -1,5 +1,5 @@
 .contactContainer{
-    background-color:brown;
+    background-color:#498bc1;
     height:300px;
     width:100%;
     display:flex;
@@ -11,4 +11,22 @@
     display:flex;
     align-items:center;
     flex-direction:column;
+}
+
+.envelopeContainer.animated{
+    animation: shrinkGrow 2s;
+}
+
+@keyframes shrinkGrow{
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+.emailAddress{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:24px;
 }

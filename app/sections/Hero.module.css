@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+.asideText{
+    font-size:24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:800;
+}
+
 .asideRight{
     width:50%;
     height:500px;

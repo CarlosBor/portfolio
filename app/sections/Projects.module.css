@@ -1,13 +1,11 @@
 .projectsContainer{
-    display:grid;
     width:100%;
-    background-color:green;
+    display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .projectsHeader{
-    width:100%;
     grid-column-start: 1;
     grid-column-end: 3;
     background-color:rebeccapurple;
@@ -15,6 +13,10 @@
     padding-bottom:45px;
     padding-right:120px;
     padding-left:120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
 }
 
 .projectsHeader>p{
@@ -31,6 +33,7 @@
     justify-content:center;
     transition: transform 0.5s ease-in-out;
     position:relative;
+    overflow:hidden;
 }
 
 .projects:hover{
@@ -54,8 +57,22 @@
 }
 
 .projectLinks{
-    background-color:blue;
+    background-color: blue;
     padding:20px;
+    z-index:2;
+    border-radius: 10px;
+}
+
+.proyectLink:hover{
+    box-shadow: 0 0 40px 10px rgba(230, 230, 230, 1); /* Stronger glow on hover */
+    background-color: rgba(230, 230, 230, 0.50);
+    border-radius:20px;
+}
+
+.repoLink:hover{
+    box-shadow: 0 0 40px 10px rgba(230, 230, 230, 1); /* Stronger glow on hover */
+    background-color: rgba(230, 230, 230, 0.50);
+    border-radius:20px;
 }
 
 .greyScale{
@@ -64,6 +81,10 @@
     position:absolute;
     background-color:rgba(50, 50, 50, 0.7);
     transition: background-color 0.5s ease-in-out;
+}
+
+.imageContainer{
+    overflow:hidden;
 }
 
 .projects:hover>.greyScale{

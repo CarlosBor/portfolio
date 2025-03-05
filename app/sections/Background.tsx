@@ -1,5 +1,5 @@
 export default function Background() {
     return (
-      <p>Fondo</p>
+      <p>background section</p>
     );
   }

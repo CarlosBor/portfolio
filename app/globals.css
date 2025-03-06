@@ -1,6 +1,13 @@
+@import '@fontsource/nunito/200.css';
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/montserrat/800.css';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --darkBlue: #3b4358;
+  --lightGray: #dfe0e0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,3 +47,4 @@ a {
     color-scheme: dark;
   }
 }
+

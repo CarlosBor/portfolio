@@ -6,7 +6,7 @@
 .asideLeft{
     width:50%;
     height:500px;
-    background-color:blue;
+    background-color:var(--lightGray);
     display:flex;
     float:left;
     align-items: center;
@@ -15,8 +15,9 @@
 
 .asideText{
     font-size:24px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:800;
+    font-family:nunito;
+    font-weight:200;
+    color:var(--darkBlue);
 }
 
 .asideRight{
@@ -31,11 +32,21 @@
     font-size:20px;
     position:relative;
     margin-top:-200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.header{
+    font-family:montserrat;
+    font-weight:800;
+    font-size: 36px;
+    color:var(--darkBlue);
 }
 
 .photo{
     width:100%;
     height:100%;
-    background-image:url("../../assets/thispersondoesnotexist.jpeg")
-    
+    background-image:url("../../assets/thispersondoesnotexist.jpeg");   
 }

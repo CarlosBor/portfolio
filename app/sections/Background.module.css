@@ -3,16 +3,21 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color:white;
-    padding:25px;
+    background-color:var(--darkBlue);
+    padding-top:45px;
+    padding-bottom:45px;
+    padding-right:120px;
+    padding-left:120px;
 }
 
 .backgroundContainer>p{
-    color:black;
+    color:var(--lightGray);
     font-size:24px;
-    font-family:Verdana;
+    font-family:nunito;
+    font-weight:400;
+    text-align:center;
 }
 
 .backgroundContainer>svg{
-    fill:blue;
+    fill:var(--lightGray);
 }

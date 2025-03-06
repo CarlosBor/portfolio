@@ -5,6 +5,7 @@ export default function Hero() {
       <div className={style.container}>
         <div className={style.asideLeft}>
           <div className={style.asideTextContainer}>
+            <h5 className={style.header}>Some kinda text here</h5>
             <p className={style.asideText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consectetur officia harum provident, deleniti eum soluta error, illum quod quasi, iusto accusamus ducimus illo modi eos quibusdam totam expedita. Quos.</p>
           </div>
         </div>

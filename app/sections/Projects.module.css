@@ -57,6 +57,14 @@
     background-image:url('./../../assets/photo4.jpg');
 }
 
+.projectButtons{
+    width:300px;
+    height:150px;
+    background-color:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .projectLinks{
     background-color: var(--lightGray);
     color:var(--darkBlue);

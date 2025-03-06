@@ -1,12 +1,21 @@
 import styles from "./Header.module.css";
 
-export default function Header() {
+interface HeaderProps{
+  onScrollToHero: () => void;
+  onScrollToProjects: () => void;
+  onScrollToBackground: () => void;
+  onScrollToContact: () => void;
+}
+
+const Header: React.FC<HeaderProps> = (props) => {
   return (
     <header className={styles.header}>
-      <div><a className={styles.headerLink} href="">Main</a></div>
-      <a className={styles.headerLink} href="">Projects</a>
-      <a className={styles.headerLink} href="">Background</a>
-      <a className={styles.headerLink} href="">Contact</a>
+      <span onClick={props.onScrollToHero}className={styles.headerLink}>Main</span>
+      <span onClick={props.onScrollToProjects}className={styles.headerLink}>Projects</span>
+      <span onClick={props.onScrollToBackground}className={styles.headerLink}>Background</span>
+      <span onClick={props.onScrollToContact}className={styles.headerLink}>Contact</span>
     </header>
   );
 }
+
+export default Header;

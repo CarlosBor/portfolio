@@ -2,11 +2,14 @@
 import style from './Contact.module.css';
 import {useState} from 'react';
 
-export default function Contact() {
+interface ContactProps{
+  ref: React.Ref<HTMLDivElement>
+}
+
+const Contact: React.FC<ContactProps> = (props) => {
   const [animationState, setAnimationState] = useState(false);
-  
   return (
-      <div className={style.contactContainer}>
+      <div className={style.contactContainer} ref={props.ref}>
         <div className={style.contactContent}>
         <span className={style.emailAddress}>Send me an email!</span>
           <a href="mailto:someone@example.com">
@@ -22,3 +25,5 @@ export default function Contact() {
       </div>
     );
   }
+
+  export default Contact;

@@ -1,8 +1,12 @@
 import style from "./Hero.module.css";
 
-export default function Hero() {
+interface HeroProps{
+  ref: React.Ref<HTMLDivElement>
+}
+
+const Hero: React.FC<HeroProps> = (props) => {
     return (
-      <div className={style.container}>
+      <div className={style.container} ref={props.ref}>
         <div className={style.asideLeft}>
           <div className={style.asideTextContainer}>
             <h5 className={style.header}>Some kinda text here</h5>
@@ -15,3 +19,4 @@ export default function Hero() {
       </div>
     );
   }
+  export default Hero;

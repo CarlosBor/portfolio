@@ -1,8 +1,12 @@
 import style from "./Projects.module.css";
 
-export default function Projects() {
+interface ProjectsProps{
+  ref: React.Ref<HTMLDivElement>
+}
+
+const Projects:React.FC<ProjectsProps> = (props) => {
     return (
-      <div className={style.projectsContainer}>
+      <div className={style.projectsContainer} ref={props.ref}>
         <div className={style.projectsHeader}><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aspernatur obcaecati aperiam? Quas earum iste quae cupiditate temporibus? Inventore, nihil nostrum? Vero obcaecati deserunt fuga earum error nostrum iure maiores?</p></div>
         <div className={style.imageContainer}>
           <div className={`${style.projects} ${style.projectPhoto1}`}>
@@ -31,3 +35,4 @@ export default function Projects() {
       </div>
     );
   }
+  export default Projects;

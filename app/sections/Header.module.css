@@ -4,6 +4,14 @@
   padding-bottom:1.5em;
   display:flex;
   justify-content:space-around;
+  position:fixed;
+  width:100%;
+  z-index:3;
+  transition: margin-top 0.5s;
+}
+
+.hideHeader{
+  margin-top:-6em;
 }
 
 .headerLink{

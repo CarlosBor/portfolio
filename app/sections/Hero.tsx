@@ -9,8 +9,10 @@ const Hero: React.FC<HeroProps> = (props) => {
       <div className={style.container} ref={props.ref}>
         <div className={style.asideLeft}>
           <div className={style.asideTextContainer}>
-            <h5 className={style.header}>Some kinda text here</h5>
-            <p className={style.asideText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consectetur officia harum provident, deleniti eum soluta error, illum quod quasi, iusto accusamus ducimus illo modi eos quibusdam totam expedita. Quos.</p>
+            <h5 className={style.header}>Hola buenas</h5>
+            <p className={style.asideText}>
+            Soy un desarrollador web con experiencia internacional en Polonia y la República Checa, especializado en el desarrollo front-end. Con habilidades en tecnologías modernas como React, JavaScript y CSS, me apasiona crear experiencias web atractivas y fáciles de usar. A lo largo de mi carrera, he trabajado en proyectos desafiantes que abarcan tanto el desarrollo de interfaces de usuario como la integración de sistemas backend, brindando soluciones completas a mis clientes.
+            </p>
           </div>
         </div>
         <div className={style.asideRight}>

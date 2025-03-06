@@ -11,8 +11,8 @@ const Contact: React.FC<ContactProps> = (props) => {
   return (
       <div className={style.contactContainer} ref={props.ref}>
         <div className={style.contactContent}>
-        <span className={style.emailAddress}>Send me an email!</span>
-          <a href="mailto:someone@example.com">
+        <span className={style.emailAddress}>Para cualquier duda o contacto, no dudes en escribirme.</span>
+          <a href="mailto:carlosborjawebdev@gmail.com">
             <div className={`${style.envelopeContainer} 
             ${animationState ? style.animated : ''}`}
             onMouseEnter={()=>setAnimationState(true)}

@@ -42,6 +42,7 @@
     font-family:montserrat;
     font-weight:800;
     font-size: 36px;
+    margin-top:105px;
     margin-bottom:25px;
     color:var(--darkBlue);
 }

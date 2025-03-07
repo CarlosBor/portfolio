@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .mobileHeader{
         position:fixed;
         width:300px;
@@ -57,7 +57,7 @@
         cursor:pointer;
     }
 }
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .mobileHeader{
         display:none;
     }

@@ -13,6 +13,11 @@
     flex-direction:column;
 }
 
+.contactContent>*{
+    margin-left:10px;
+    margin-right:10px;
+}
+
 .envelopeContainer.animated{
     animation: shrinkGrow 2s;
 }
@@ -27,6 +32,6 @@
 }
 
 .emailAddress{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: nunito;
     font-size:24px;
 }

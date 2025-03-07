@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import style from "./Header.module.css";
 import {useState, useEffect, useRef} from 'react';
 
 interface HeaderProps{
@@ -30,11 +30,11 @@ const Header: React.FC<HeaderProps> = (props) => {
   }, []);
 
   return (
-    <header className={`${styles.header} ${visibility ? '' : styles.hideHeader}`}>
-      <span onClick={props.onScrollToHero}className={styles.headerLink}>Main</span>
-      <span onClick={props.onScrollToProjects}className={styles.headerLink}>Projects</span>
-      <span onClick={props.onScrollToBackground}className={styles.headerLink}>Background</span>
-      <span onClick={props.onScrollToContact}className={styles.headerLink}>Contact</span>
+    <header className={`${style.header} ${visibility ? '' : style.hideHeader}`}>
+      <span onClick={props.onScrollToHero}className={style.headerLink}>Main</span>
+      <span onClick={props.onScrollToProjects}className={style.headerLink}>Projects</span>
+      <span onClick={props.onScrollToBackground}className={style.headerLink}>Background</span>
+      <span onClick={props.onScrollToContact}className={style.headerLink}>Contact</span>
     </header>
   );
 }

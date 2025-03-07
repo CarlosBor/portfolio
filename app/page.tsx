@@ -4,6 +4,8 @@ import Projects from "./sections/Projects";
 import Hero from "./sections/Hero";
 import Background from "./sections/Background";
 import Contact from "./sections/Contact";
+import MobileHeader from './sections/MobileHeader';
+
 import { useRef } from 'react';
 
 //El azul marino / Verde petroleo
@@ -32,6 +34,12 @@ export default function Home() {
     
   return (
     <div>
+      <MobileHeader
+        onScrollToHero={()=>scrollToSection(heroRef)}
+        onScrollToProjects={()=>scrollToSection(projectRef)}
+        onScrollToBackground={()=>scrollToSection(backgroundRef)}
+        onScrollToContact={()=>scrollToSection(contactRef)}
+      />
       <Header
         onScrollToHero={()=>scrollToSection(heroRef)}
         onScrollToProjects={()=>scrollToSection(projectRef)}

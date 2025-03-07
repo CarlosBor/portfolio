@@ -42,11 +42,12 @@
 }
 
 .projectPhoto1{
-    background-image:url('./../../assets/photo1.jpg');
+    background-image:url('./../../assets/circleFifths.jpg');
+    background-repeat:no-repeat;
 }
 
 .projectPhoto2{
-    background-image:url('./../../assets/photo2.jpg');
+    background-image:url('./../../assets/guitargame.jpg');
 }
 
 .projectPhoto3{
@@ -71,6 +72,17 @@
     padding:20px;
     z-index:2;
     border-radius: 10px;
+}
+
+.projectButtonsIcons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.projectButtonsIcons>a>svg{
+    width:100px;
+    height:100px;
 }
 
 .proyectLink:hover{
@@ -99,4 +111,32 @@
 
 .projects:hover>.greyScale{
     background-color:rgba(50,50,50,0);
+}
+
+@media (max-width:700px){
+    .projectsContainer{
+        display:flex;
+        flex-direction:column;
+    }
+    .projects{
+        height:300px;
+    }
+    .greyScale{
+        display:none;
+    }
+    .projectButtons{
+        position:absolute;
+        bottom:0px;
+        right:0px;
+        width:100px;
+        height:50px;
+    }
+    .projectButtonsIcons{
+        width:50px;
+        height:50px;
+    }
+    .projectButtonsIcons>a>svg{
+        width:50px;
+        height:50px;
+    }
 }

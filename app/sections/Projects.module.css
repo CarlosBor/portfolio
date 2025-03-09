@@ -9,14 +9,10 @@
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: var(--darkBlue);
-    padding-top:45px;
-    padding-bottom:45px;
-    padding-right:120px;
-    padding-left:120px;
+    padding:3em 6em 3em 6em;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:300px;
 }
 
 .projectsHeader>p{
@@ -103,10 +99,15 @@
     position:absolute;
     background-color:rgba(50, 50, 50, 0.7);
     transition: background-color 0.5s ease-in-out;
+    pointer-events:none;
 }
 
 .imageContainer{
     overflow:hidden;
+}
+
+.imageContainer>div{
+    min-height:300px;
 }
 
 .projects:hover>.greyScale{
@@ -118,8 +119,8 @@
         display:flex;
         flex-direction:column;
     }
-    .projects{
-        height:300px;
+    .projectsHeader{
+        padding:2em 5em 2em 5em;
     }
     .greyScale{
         display:none;

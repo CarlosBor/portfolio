@@ -4,7 +4,7 @@
 @import '@fontsource/montserrat/800.css';
 
 :root {
-  --background: #ffffff;
+  --background: #dfe0e0;
   --foreground: #171717;
   --darkBlue: #3b4358;
   --lightGray: #dfe0e0;
@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #dfe0e0;
     --foreground: #ededed;
   }
 }

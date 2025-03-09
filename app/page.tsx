@@ -16,11 +16,6 @@ import { useRef } from 'react';
 //Montserrat cabeceras bolded
 //Nunito texto suave
 
-// #498BC1
-// #E2C2C6
-// #4F5165
-// #293132
-
 export default function Home() {
   const heroRef = useRef<HTMLElement | null>(null);;
   const projectRef = useRef<HTMLElement | null>(null);;

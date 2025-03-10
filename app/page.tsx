@@ -17,12 +17,12 @@ import { useRef } from 'react';
 //Nunito texto suave
 
 export default function Home() {
-  const heroRef = useRef<HTMLElement | null>(null);;
-  const projectRef = useRef<HTMLElement | null>(null);;
-  const backgroundRef = useRef<HTMLElement | null>(null);;
-  const contactRef = useRef<HTMLElement | null>(null);;
+  const heroRef = useRef<HTMLDivElement | null>(null);;
+  const projectRef = useRef<HTMLDivElement | null>(null);;
+  const backgroundRef = useRef<HTMLDivElement | null>(null);;
+  const contactRef = useRef<HTMLDivElement | null>(null);;
 
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     console.log("It does happen");
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
